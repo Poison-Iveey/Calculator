@@ -3,8 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #532828;
     margin: 0;
+    background-image:url(https://wallpaper.forfun.com/fetch/c1/c106475dca9b6ebc5771abce1fc95782.jpeg);
+    background-size: cover;
 }
 
 .calculator {
@@ -30,3 +31,27 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+.btn {
+    width: 25%;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    font-size: 1.5em;
+    cursor:pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+.btn[data-value="="] {
+    background-color: #f57c00;
+    color: white;
+    flex-grow: 1;
+}
+
